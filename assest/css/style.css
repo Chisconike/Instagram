@@ -1,0 +1,1057 @@
+/* ==================================== Defaults ============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif, -apple-system, 'BlinkMacSystemFont', 'Segoe UI', Arial, Helvetica, sans-serif;
+}
+
+.material-symbols-outlined {
+  font-size: 28px;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+
+i {
+  font-size: 25px;
+}
+
+
+/* ============================ Section / small / following ==================================== */
+
+section {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: flex-start;
+  margin-left: 245px;
+  padding-top: 45px;
+}
+
+.small_mobile {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex !important;
+  justify-content: space-between;
+  padding: 0px 10px;
+  align-items: center;
+  display: none;
+}
+
+.small_mobile .box1,
+.small_mobile .box2 {
+  display: none;
+}
+
+.small_mobile a .light {
+  display: block;
+}
+
+.small_mobile a .dark {
+  display: none;
+}
+
+.small_mobile span {
+  font-size: 30px;
+  color: black;
+  display: none;
+}
+
+.small_mobile div img {
+  width: 130px;
+  display: none;
+}
+
+.small_mobile .img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.small_mobile div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.following {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 150px;
+  padding: 10px;
+  gap: 5px;
+  position: absolute;
+  top: 60px;
+  left: 10px;
+  z-index: 200;
+  box-shadow: 0px 3px 5px #80808063;
+  border-radius: 5px;
+}
+
+.following a {
+  color: black;
+}
+
+.following span {
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+.following hr {
+  width: 100%;
+}
+
+.follow-active {
+  display: flex;
+}
+
+.dark {
+  display: none;
+}
+
+.light {
+  display: block;
+}
+
+/* =========================== More ==================================== */
+.more {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 260px;
+  background: white;
+  gap: 6px;
+  position: fixed;
+  bottom: 78px;
+  z-index: 300;
+  left: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 5px #808080c4;
+  padding: 10px 5px;
+
+}
+
+.more div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: black;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.more p {
+  padding: 4px 0;
+}
+
+.more div:hover {
+  background-color: rgba(221, 221, 221, 0.561);
+}
+
+.more div a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: black;
+}
+
+.more hr {
+  width: 100%;
+  color: #80808075;
+}
+
+.more-active {
+  display: flex;
+}
+
+/* =========================== Aside ==================================== */
+
+aside {
+  position: fixed;
+  width: 245px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px 12px;
+  background: white;
+  border-right: 1px solid rgb(189, 189, 189);
+}
+
+aside a .mobile-logo {
+  display: none;
+}
+
+aside>a img {
+  width: 120px;
+  margin: 8px 0px 20px 5px;
+}
+
+aside .home {
+  margin-top: 5px;
+  font-weight: 700;
+}
+
+aside div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 7px 0px 8px 8px;
+  transition: 0.15s;
+  margin: 4px 0;
+  color: black;
+  border-radius: 10px;
+}
+
+aside div a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+aside div:hover {
+  background-color: rgba(221, 221, 221, 0.561);
+}
+
+aside .aside_fit a {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: black;
+}
+
+aside .img {
+  width: 35px;
+  height: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+aside .img2 img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 5px 20px 5px 5px;
+}
+
+aside .last {
+  position: fixed;
+  bottom: 20px;
+  width: 17%;
+}
+
+aside .last span {
+  margin-top: 5px;
+}
+
+aside .material-symbols-outlined {
+  margin-left: 3px;
+  font-size: 28px;
+  padding-right: 15px;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+/* ==================================== Main ====================================== */
+
+section .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 5px;
+  gap: 50px;
+  width: 100%;
+}
+
+section .main .row-slide {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+  overflow: auto;
+  white-space: nowrap;
+  width: 90%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+section .main .row-slide::-webkit-scrollbar {
+  display: none;
+}
+
+
+section .main .row-slide a {
+  display: inline-block;
+  color: black;
+}
+
+section .main .row-slide .profile-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .main .row-slide .profile-icon p {
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+section .main .row-slide .profile-icon div {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, orange, #F56040, #db37c8, #FF0067);
+}
+
+
+section .main .row-slide .profile-icon div img {
+  width: 94%;
+  height: 94%;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+/* ================================= Dashboard ================================== */
+section .main .dashboard {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-content: center;
+  width: 65%;
+  margin-right: 80px;
+  padding-bottom: 20px;
+  gap: 30px;
+}
+
+.dashboard .user_control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.dashboard .user_control div a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard .user_control div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.dashboard .user_control img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dashboard .user_control p {
+  color: gray;
+}
+
+.dashboard .user_control a {
+  color: black;
+}
+
+.dashboard .content {
+  width: 100%;
+  height: 100%;
+}
+
+.dashboard .content img {
+  width: 100%;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+.dashboard .boost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+.dashboard .boost a {
+  color: black;
+}
+
+.dashboard .boost div a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+
+.dashboard .identify {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.dashboard .identify a {
+  font-weight: 500;
+  color: black;
+}
+
+.dashboard .identify .views {
+  color: gray;
+}
+
+.dashboard .identify .num_likes {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+}
+
+.dashboard .identify .num_likes div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dashboard .identify .num_likes p {
+  font-weight: 500;
+}
+
+.dashboard .identify .num_likes img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: white;
+}
+
+.dashboard .identify .num_likes .negative {
+  margin-left: -10px;
+  border: 1px solid white;
+  background: white;
+}
+
+.dashboard .identify .num_likes .negative2 {
+  margin-left: -10px;
+  border: 1px solid white;
+  background: white;
+}
+
+.dashboard .identify form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 5px;
+  border-bottom: 1px solid gray;
+}
+
+.dashboard .identify form textarea {
+  width: 90%;
+  padding: 5px 5px 5px 0px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.dashboard .identify span {
+  color: gray;
+  font-size: 15px;
+}
+
+/* =================================== Right ===================================== */
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 20px 0 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.right .user_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.right .user_info h4 {
+  color: black;
+}
+
+.right .followers {
+  width: 100%;
+}
+
+.right .user_info .img_cover {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.right .followers .user_info {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0 15px 0px;
+  width: 100%;
+}
+
+.right .user_info .img_cover .img {
+  width: 45px;
+  height: 45px;
+}
+
+.right .user_info .img_cover .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.right div a.switch {
+  padding-left: 20px;
+  color: rgb(0, 119, 255);
+  font-size: 13px;
+
+}
+
+.right .suggest {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right p {
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.right .gray {
+  color: gray;
+  font-size: 12px;
+  font-weight: light;
+}
+
+.right .laws {
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.right .laws a {
+  color: gray;
+}
+
+.right .laws p {
+  font-size: 15px;
+  padding-top: 20px;
+  color: gray;
+}
+
+/* ===================================== For JavaScript ==================================================== */
+
+.body-active {
+  transition: 0.3s;
+}
+
+.body-active .light,
+.body-active .small_mobile .light {
+  display: none;
+}
+
+.body-active .dark,
+.body-active .small_mobile .dark {
+  display: block;
+}
+
+.body-active,
+.body-active aside,
+.body-active .small_mobile {
+  background: black;
+}
+
+.body-active aside a,
+.body-active .aside_fit,
+.body-active aside div,
+.body-active aside a i,
+.body-active .row-slide a,
+.body-active .right h4,
+.body-active .user_control h5,
+.body-active .identify a,
+.body-active .identify p,
+.body-active .more a,
+.body-active .user_control a,
+.body-active .boost a,
+.body-active .small_mobile,
+.body-active .small_mobile span,
+.body-active .following a {
+  color: white !important;
+}
+
+.body-active .right p {
+  color: gray;
+}
+
+.body-active .identify textarea {
+  background: transparent;
+}
+
+.body-active .more,
+.body-active .following {
+  background: rgb(41, 41, 41);
+  box-shadow: 0px 3px 5px #ffffff0f
+}
+
+.body-active .more div:hover,
+.body-active aside div:hover {
+  background: #80808030;
+}
+
+/* ================================= Media Query ============================================ */
+
+@media only screen and (max-width: 2000px) {
+  section .main .row-slide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 17px;
+    overflow: auto;
+    white-space: nowrap;
+    max-width: 90%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+
+  section .main .row-slide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 17px;
+    overflow: auto;
+    white-space: nowrap;
+    max-width: 90%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  aside div:nth-of-type(3),
+  aside div:nth-of-type(7) {
+    display: none;
+  }
+
+  aside {
+    position: fixed;
+    width: 100px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 12px;
+    border-right: 1px solid rgb(189, 189, 189);
+  }
+
+  aside div span {
+    display: none;
+  }
+
+  aside a .mobile-logo {
+    display: block;
+    color: black;
+    margin: 20px 0 30px 12px;
+
+  }
+
+  aside .logo_img .light,
+  aside .logo_img .dark {
+    display: none;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: flex-start;
+    margin-left: 100px;
+    padding-top: 45px;
+  }
+
+  .more {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 250px;
+    background: white;
+    gap: 6px;
+    position: fixed;
+    bottom: 25px;
+    z-index: 300;
+    left: 60px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 5px #808080c4;
+    padding: 10px 5px;
+
+  }
+
+  .more div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: black;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  .more-active {
+    display: flex;
+  }
+
+  aside .last {
+    position: fixed;
+    bottom: 20px;
+    width: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .right {
+    display: none;
+  }
+
+  aside {
+    position: fixed;
+    width: 70px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px 12px;
+    border-right: 1px solid rgb(189, 189, 189);
+  }
+
+  aside div:nth-of-type(3),
+  aside div:nth-of-type(7) {
+    display: flex;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 90%;
+    align-items: flex-start;
+    margin-left: 150px;
+    padding-top: 10px;
+  }
+
+  section .main .row-slide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 17px;
+    overflow: auto;
+    white-space: nowrap;
+    max-width: 75%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-bottom: 30px;
+    border-bottom: 1px solid gray;
+  }
+
+  section .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    gap: 50px;
+    width: 100%;
+  }
+
+  section .main .dashboard {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: 70%;
+    margin-right: 0px;
+    padding-bottom: 20px;
+    gap: 30px;
+  }
+
+}
+
+@media only screen and (max-width: 850px) {
+  section .main .row-slide {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 17px;
+    overflow: auto;
+    white-space: nowrap;
+    max-width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding-bottom: 30px;
+    padding-top: 45px;
+    border-bottom: unset;
+  }
+
+  section .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    gap: 20px;
+    width: 100%;
+    /* border: 1px solid black; */
+  }
+
+  section .main .dashboard {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: 70%;
+    margin-right: 0px;
+    padding-bottom: 20px;
+    gap: 30px;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: flex-start;
+    margin-left: 90px;
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  .last,
+  aside div:nth-of-type(3),
+  aside div:nth-of-type(6),
+  aside div:nth-of-type(7),
+  aside a:nth-of-type(2) {
+    display: none;
+  }
+
+  aside div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding: 0px 0px 0px 20px;
+    transition: 0.15s;
+    margin: 0px;
+    color: black;
+    border-radius: 0px;
+  }
+
+  aside div:hover {
+    background: none;
+  }
+
+  aside* {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  aside {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    border-right: unset;
+    background-color: white;
+  }
+
+  aside .img {
+    width: 35px;
+    height: 35px;
+    margin-right: 0px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  aside .img2 img {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0px;
+  }
+
+  aside .last {
+    position: fixed;
+    bottom: 0px;
+  }
+
+  aside .last span {
+    margin-top: 0px;
+  }
+
+  section .main .row-slide {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 17px;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    padding: 70px 5px 30px 5px;
+    border-bottom: unset;
+    /* border: 1px solid black; */
+  }
+
+  section .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+    gap: 0px;
+    width: 100%;
+    /* border: 1px solid black; */
+  }
+
+  section .main .dashboard {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: 95%;
+    margin-right: 0px;
+    padding-bottom: 20px;
+    gap: 30px;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 100%;
+    align-items: flex-start;
+    margin-left: 0px;
+    padding-top: 0px;
+  }
+
+  section .main .row-slide .profile-icon div {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, orange, #F56040, #db37c8, #FF0067);
+  }
+
+  section .main .row-slide .profile-icon div img {
+    width: 94%;
+    height: 94%;
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+
+  .small_mobile {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    align-items: center;
+    display: block;
+    background: white;
+    border: 1px solid #8080807d;
+  }
+
+  .small_mobile span {
+    font-size: 30px;
+    color: black;
+    display: block;
+  }
+
+  .small_mobile div img {
+    width: 130px;
+    display: block;
+  }
+
+  .small_mobile .switch_mode {
+    margin-right: 10px;
+  }
+
+  .small_mobile .box1,
+  .small_mobile .box2 {
+    display: flex;
+  }
+
+}
